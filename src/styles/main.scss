@@ -1,7 +1,9 @@
-body {
-  margin: 0;
-}
-.header {
-  background-image: url(../images/header-bg.png);
-  height: 100vh;
-}
+@import './blocks/page';
+@import './blocks/tor-bar';
+@import './blocks/icon';
+@import './blocks/header';
+@import './blocks/menu';
+@import './blocks/nav';
+
+
+

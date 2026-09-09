@@ -1,49 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- head section -->
+<html lang="en" class="page">
+  <!-- head section -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bike</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="scripts/main.js" defer></script>
   </head>
-  <!--the end of head section-->
-  <body>
+  <!--end of head section-->
+  <body class="page__body">
     <header class="header">
-      <div class="header__logo">
-        <a href="#" alt = "MyBike">
-          <img src="images/logo.png" alt="MyBike">
+
+      <div class="top-bar">
+        <a href="#" class="top-bar__logo logo--light">
         </a>
+        <div class="top-bar__icons">
+          <a href="#" class="icon icon--call"></a>
+          <a href="#menu" class="icon icon--menu"></a>
         </div>
-        <div class="icon">
-         <a href="#" class="icon icon--call">
-          <img src="images/icons/icon-call.png" alt="call">
-        </a>
-        <a href="#" lass="icon icon--menu">
-          <img src="images/icons/icon-menu.png" alt="menu">
-        </a>
+      </div>
+
+      <div class="header__title">
+        <h2>Take the Streets</h2>
       </div>
     </header>
 
-   <main>
-    <section>
-      <h2>Home page</h2>
-    </section>
+    <aside class="page__menu menu" id="menu">
+      <div class="top-bar">
+        <a href="#" class="top-bar__logo logo--black"></a>
+        <div class="menu__icons">
+          <a href="#" class="icon icon--close"></a>
+        </div>
+      </div>
+      <div class="menu__content">
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#aboutus">About us</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#comparebikes">Compare Bikes</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#details">Details</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="+1 234 5555-55-55"  class="menu__phone-number">+1234 5555-55-55</a>
+        <a href="+1 234 5555-55-55" class="menu__phone-call">Book a test ride</a>
+      </div>
+    </aside>
 
-    <section>
-      <h2>Home page</h2>
-    </section>
+    <main class="main">
+      <section>
+        <h2>Home page</h2>
+      </section>
 
-    <section>
-      <h2>Home page</h2>
-    </section>
+      <section class="aboutus" id="aboutus">
+        <h2>About us</h2>
+      </section>
 
-    <section>
-      <h2>Home page</h2>
-    </section>
-   </main>
+      <section>
+        <h2>Home page</h2>
+      </section>
 
-  <footer></footer>
+      <section>
+        <h2>Home page</h2>
+      </section>
+    </main>
+
+    <footer></footer>
   </body>
 </html>

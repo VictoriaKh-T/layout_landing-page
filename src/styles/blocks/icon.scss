@@ -1,0 +1,23 @@
+
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+
+    @media (min-width: 744px) {
+    height: 32px;
+    width: 32px;
+  }
+
+  &--call {
+    background-image: url(../images/icons/icon-call.png);
+  }
+  &--menu {
+    background-image: url(../images/icons/icon-menu.png);
+  }
+  &--close {
+    background-image: url(../images/icons/icon-close.png);
+  }
+}
+
