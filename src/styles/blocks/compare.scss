@@ -1,7 +1,9 @@
 .compare {
+  display: flex;
 
     &__header {
       color: #fff;
+      align-items: center;
 
       @media (min-width: 744px) {
         flex-direction: row;
@@ -13,70 +15,94 @@
     }
     
     &__title {
-        margin-top: 92px;
-        margin-left: 20px; 
-        max-width: 280px;
+        padding: 0 20px;
+       
+        &-txt {
         font-size: 32px;
-        font-style: medium;
         letter-spacing: -1.5px;
+        text-align: center;
+        text-transform: capitalize; 
 
         @media (min-width: 744px) {
-            margin-top: 132px;
-            margin-left: 176px; 
-            max-width: 392px;
+            padding: 0 176px 56px 176px; 
             font-size: 48px;
         }
 
         @media (min-width: 1260px) {
-            margin-top: 164px;
-            margin-left: 381px; 
-            max-width: 498px;
+            padding: 0 381px; 
             font-size: 64px;
         }
+      }
     }
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 40px; 
-        padding: 0;
-        list-style: none;
+&__list {
+  display: grid;
+  gap: 40px;
+  margin: 0;
+  padding: 48px 20px;
+  list-style: none;
 
-        margin: 40px 20px 0;
+  @media (min-width: 744px) {
+    gap: 48px;
+    padding: 48px 176px;
+  }
 
-        @media (min-width: 744px) {
-            gap: 48px; 
-            margin: 48px 176px 0;
-        } 
+  @media (min-width: 1260px) {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 56px 120px;
+  }
+}
 
-        @media (min-width: 1260px) {
-          flex-direction: row;
-          margin: 56px 120px 0;
-        } 
+.bike-card {
+  display: grid;
+  gap: 8px;
+
+  &__image {
+    width: 280px;
+    height: 228px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+   @include on-tablet {
+      width: 392px;
+      height: 316px;
+    }
+  @include on-desktop{
+      width: 324px;
+      height: 256px;     
     }
 
+    &--sporty {
+      background-image: url(../images/compare/sporty4.png);
+    }
 
-  .bike-card {
-     width: 100%;
+    &--town {
+      background-image: url(../images/compare/ride-in-town-st.png);
+    }
 
-    &__image {
-      height: 200px;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
+    &--agile {
+      background-image: url(../images/compare/agile-ride-3.png);
+    }
+  }
 
-       &--sporty {
-        background-image: url(../images/compare/sporty4.png);
-       }
+  &__name,
+  &__price {
+    font-weight: 700;
+    font-size: 24;
+    line-height: 140%;
+    letter-spacing: 0;
 
-       &--town {
-         background-image: url(../images/compare/ride-in-town-st.png);
-        }
+  }
 
-       &--agile {
-        background-image: url(../images/compare/agile-ride-3.png);
-       }
-    }  
-   }
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  &__price {
+    margin-top: 8px;
+  }
+ }
 }

@@ -1,40 +1,26 @@
 
 .top-bar {
-  margin-left: 24px;
-  margin-top: 20px;
+  padding: 24px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: 744px) {
-    margin-left: 72px;
-    margin-top: 36px;
+    padding: 36px 72px;
   }
 
   @media (min-width: 1260px) {
-    margin-left: 120px;
-    margin-top: 36px;
+    padding: 36px 120px;
   }
+
   &__icons{
    display: flex;
    align-items: center;
    gap: 24px;
-   margin-right: 20px;
 
      @media (min-width: 744px) {
-      margin-right: 72px;
       gap: 32px;
      }
-
-     @media (min-width: 1260px) {
-      margin-right: 120px;
-      margin-top: 48px;
-      gap: 32px;
-  }
-
-
-
-
   }
 
   &__logo {

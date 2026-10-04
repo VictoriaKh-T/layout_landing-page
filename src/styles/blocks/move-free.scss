@@ -1,46 +1,36 @@
 .move-free {
     &__header {
-      width: 100%;
-      color: #FFF;
-      display: flex;
+      display: grid;
+      padding: 60px 20px 92px 20px;
+      grid-template-columns: 1fr;
       gap: 24px;
-      align-items: center;
-
   
   @media (min-width: 744px) {
-    margin-left: 72px;
-    margin-top: 120px;
-    gap: 0;
+    padding: 120px 72px 132px;
+    grid-template-columns: 1fr 1fr;
   }
 
 
   @media (min-width: 1260px) {
-    margin-left: 120px;
-    margin-top: 120px;
-    flex-direction: row;
-    gap: 0;
+    padding: 120px 120px 164px;
   }
 }
     &__title {
       font-size: 32px;
-      flex: 0 0 152px;
       font-weight: 500;
       line-height: 100%;
       letter-spacing: -1.5px;
 
   @media (min-width: 744px) {
-    flex: 0 0 288px;
     font-size: 48px;
   }
   
   @media (min-width: 1260px) {
-    flex: 0 0 411px;
     font-size: 64px;
   }
 }
     
     &__text {
-      flex: 0 0 280px;
       font-size: 23px;
       font-weight: 500;
       line-height: 140%;

@@ -1,18 +1,17 @@
 .header {
-  background-image: url(../images/header-bg2.png);
+  background-image: url(../images/header-bg-small.png);
   background-repeat: no-repeat;
   background-position: right center;
-  color: #FFF;
   display: flex;
   flex-direction: column;
   min-height: 480px;
 
-  @media (min-width: 744px) {
-    background-image: url(../images/header-bg2.png);
+  @include on-tablet {
      min-height: 628px;
+     background-image: url(../images/header-bg2.png);
    }
 
-   @media (min-width: 1260px) {
+  @include on-desktop {
     box-sizing: border-box;
     background-size: cover;
     background-image: url(../images/header-bg.png);
@@ -20,23 +19,24 @@
    }
 
   &__title {
-  min-width: 279px;
+
   font-size: 36px;
   margin-top: 270px;
-  margin-left: 24px;
+  margin-left: 21px;
+  margin-right: 20px;
 
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -1.5px;
   text-align: center;
 
-  @media (min-width: 744px) {
+  @include on-tablet {
     font-size: 64px;
     margin-top: 306px;
     margin-left: 72px;
   }
 
-  @media (min-width: 1260px) {
+  @include on-desktop {
     max-width: 672px;
     font-size: 80px;
     margin-top: 300px;
