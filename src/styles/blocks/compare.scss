@@ -24,7 +24,7 @@
         text-transform: capitalize; 
 
         @media (min-width: 744px) {
-            padding: 0 176px 56px 176px; 
+            padding: 0 176px 56px; 
             font-size: 48px;
         }
 
@@ -68,6 +68,7 @@
       width: 392px;
       height: 316px;
     }
+    
   @include on-desktop{
       width: 324px;
       height: 256px;     
