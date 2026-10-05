@@ -1,50 +1,67 @@
-
 .top-bar {
-  padding: 24px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 24px 20px;
 
-  @media (min-width: 744px) {
+  @include on-tablet {
     padding: 36px 72px;
   }
 
-  @media (min-width: 1260px) {
+  @include on-desktop {
     padding: 36px 120px;
   }
 
-  &__icons{
-   display: flex;
-   align-items: center;
-   gap: 24px;
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
 
-     @media (min-width: 744px) {
+    @include on-tablet {
       gap: 32px;
-     }
+    }
   }
 
   &__logo {
-  height: 38px;
-  width: 130px;
-  background-size: cover;
+    width: 130px;
+    height: 38px;
+    background-size: cover;
 
-    @media (min-width: 744px) {
-    height: 56px;
-    width: 187px;
-   }
-
-  @media (min-width: 1260px) {
-    height: 56px;
-    width: 187px;
-   }
+    @include on-tablet {
+      width: 187px;
+      height: 56px;
+    }
   }
 }
 
 .logo--light {
-   background-image: url(../images/logo-light.png);
+  background-image: url(../images/logo-light.png);
 }
 
 .logo--black {
-   background-image: url(../images/logo-black.png);
+  background-image: url(../images/logo-black.png);
+}
+
+.icon {
+  position: relative;
+
+  &__phone {
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-right: 8px;
+    white-space: nowrap;
+    color: #fff;
+
+    opacity: 0;
+    transform: translate(20px, -50%);
+    pointer-events: none;
+    transition: opacity 0.3s, transform 0.3s;
   }
 
+  &--call:hover &__phone {
+    opacity: 1;
+    transform: translate(0, -50%);
+    pointer-events: auto;
+  }
+}
