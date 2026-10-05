@@ -51,9 +51,9 @@
     cursor: pointer;
     transition: box-shadow 0.3s;
 
-      &:hover {
-        box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
-      }
+    &:hover {
+      box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+    }
   }
 
   &__info {
@@ -79,11 +79,10 @@
     text-decoration: none;
   }
 
-   @include on-tablet {
-    
+  @include on-tablet {
     margin-left: 72px;
     padding-bottom: 102px;
-    
+
     &__title {
       font-size: 48px;
       line-height: 100%;
