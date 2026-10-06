@@ -64,6 +64,12 @@
     background-position: center;
     background-size: cover;
 
+    transition: transform 0.3s;
+
+     &:hover {
+      transform: scale(1.05);
+     }
+
    @include on-tablet {
       width: 392px;
       height: 316px;

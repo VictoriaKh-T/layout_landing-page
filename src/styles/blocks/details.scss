@@ -73,6 +73,12 @@
            aspect-ratio: 1 / 1;
            background-image: url(../images/details/discSide.png);
          }
+
+         transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
        }
 
     &__item-content {
@@ -149,10 +155,9 @@
 
     &__image--unlock-side,
     &__image--range-side,
-    &__image--disc-side {  
+    &__image--disc-side {
         aspect-ratio: 1 / 1;
     }
-
 
     &__item-content {
         letter-spacing: 0;

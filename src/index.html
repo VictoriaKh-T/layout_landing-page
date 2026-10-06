@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Bike</title>
+    <link rel="icon" href="./images/Vector.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com"
@@ -175,8 +176,7 @@
       <section class="contact" id="contacts">
         <div class="contact__title"><h2>Contact us</h2></div>
         <div class="contact__content">
-          <form class="contact__form" action="#"
-            method="post">
+          <form class="contact__form" action="#">
             <input class="contact__field" type="text"
               name="name" placeholder="Name"
               required>
@@ -205,11 +205,12 @@
 
             <div class="contact__item">
               <p class="contact__label">Address</p>
-              <p class="contact__value">
+              <a class="contact__value"  
+              href="https://www.google.com/maps/search/?api=1&query=400+First+Ave+Suite+700+Minneapolis+MN+55401" target="_blank">
                 400 first ave.<br>
                 suite 700<br>
                 Minneapolis, MN 55401
-              </p>
+            </a>
             </div>
           </div>
         </div>
