@@ -76,7 +76,16 @@
     font-weight: 500;
     line-height: 140%;
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    transition: color 0.3s, text-decoration-color 0.3s;
+
+    &:hover {
+      color: #c2c2c2;
+      text-decoration-color: currentcolor;
+    }
   }
 
   @include on-tablet {
